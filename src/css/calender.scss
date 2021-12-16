@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Kalam:300,regular,700);
+body{
+    
+    font-family:'Kalam',sans-serif;
+}
+
+.bs_calender{
+    .calender-header{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding: 1.5rem .5rem .1rem .5rem;
+        background-color: #202020;
+        color: white;
+        border-radius:.5rem .5rem 0 0;
+        .calender-year,.calender-month{
+            background-color:white;
+            padding: 1rem .5rem .3rem .5rem ;
+            
+        }
+    }
+    // max-width: 35rem;
+    background-color: rgb(243, 125, 14);
+    border-radius:.5rem .5rem 0 0;
+    div{
+        padding: .2rem;
+    }
+}
+.grid-cal{
+    margin: .5rem;
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    background-color: rgb(243, 125, 14);
+    border-radius:5px;
+    .active{
+        background-color:rgb(0, 0, 0) !important;
+        color: white;
+        font-weight: bold;
+    }
+    .calender-weekday{
+        border-radius:.3rem .3rem 0 0;
+        background-color:black;
+        color:white;
+        padding:.5rem;
+        min-width: 4.5rem;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: .5px;
+    }
+    .calender-box{
+        background-color:rgb(255, 255, 255);
+        padding:.5rem;
+        border-radius: 2px;
+        position: relative;
+        .calender-english-day{
+            position: absolute;
+            font-size: 0.7rem;
+            bottom: 1px;
+            right: 8px;
+            color: rgb(165, 161, 161);
+        }
+    }
+    .calender-box:hover{
+        background-color:#974b19!important;
+        color: white;
+        font-weight: bold;
+    }
+    .privious-month{
+        color: rgb(129, 127, 127);
+    }
+    
+}
