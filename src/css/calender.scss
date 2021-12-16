@@ -1,10 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Kalam:300,regular,700);
 body{
-    
+    background-color: cornflowerblue;
     font-family:'Kalam',sans-serif;
 }
-
+.calender-wrapper{
+    width:100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    h1{
+        font-style: bold;
+        font-size:3rem;
+        color:white;
+    }
+}
 .bs_calender{
+    max-width: 50rem;
     .calender-header{
         display:flex;
         justify-content:center;
@@ -13,6 +27,12 @@ body{
         background-color: #202020;
         color: white;
         border-radius:.5rem .5rem 0 0;
+        .calender-year{
+            border-radius:.5rem 0 0 .5rem;
+        }
+        .calender-month{
+            border-radius:0 .5rem .5rem 0;
+        }
         .calender-year,.calender-month{
             background-color:white;
             padding: 1rem .5rem .3rem .5rem ;

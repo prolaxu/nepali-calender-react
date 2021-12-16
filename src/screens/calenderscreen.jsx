@@ -7,9 +7,17 @@ import {
 } from '../store/datastore';
 
 export default function Calenderscreen() {
+    yearStore.dispatch({
+        type: "Update",
+        payload:2078
+    });
+    monthStore.dispatch({
+        type: "Update",
+        payload:9
+    });
     return (
-        <div>
-            <h1>Calender</h1>
+        <div className="calender-wrapper">
+            <h1>नेपाली पात्रो</h1>
             <Calender 
              year={yearStore.getState()}
              month={monthStore.getState()}

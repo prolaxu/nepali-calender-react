@@ -28,8 +28,7 @@ export default function Calender({lang
           })
         setDay(dayStore.getState());
         console.log(dayStore.getState());
-    }
-    
+    }   
     const english_day=(date)=>{
         date=date.split("-");
         return date[2];
